@@ -1,0 +1,25 @@
+.img-area {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content:center;
+	filter: brightness(0.5) grayscale(100);
+	transition:0.3s ease-in-out;
+}
+.single-img{
+	padding:0 20px  20px;
+}
+.single-img:hover{
+	transform:scale(1.5);
+	
+}
+.img-area:hover {
+	filter: brightness(1) grayscale(0);
+}
+@media(max-width :1000px){
+	.img-area{width: 45px;}
+}
+@media(max-width:750px){
+	.img-area{ width:100%}
+}
